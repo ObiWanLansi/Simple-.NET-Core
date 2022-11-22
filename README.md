@@ -1,4 +1,6 @@
-# Simple-.NET-Core
+[![.NET](https://github.com/ObiWanLansi/Simple-.NET-Core/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ObiWanLansi/Simple-.NET-Core/actions/workflows/dotnet.yml)
+
+# Simple .NET-Core Porject with Codespaces
 
 Lorem ipsum dolor sit amet, faucibus fringilla rutrum vivamus. Sagittis
 wingtsun et eget vel. Euismod id orci sammy nonummy adipiscing
