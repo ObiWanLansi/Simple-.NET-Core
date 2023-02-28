@@ -2,23 +2,24 @@
 class Program
 {
 
-    public static void Counter(object delay)
+    private static void Counter(object oDelay)
     {
         ulong counter = 0;
 
-        int iDelay=(int) delay;
+        int iDelay = (int)(oDelay ?? 100);
 
         try
         {
             while (true)
             {
-                Console.Out.WriteLineAsync($"{Thread.CurrentThread.ManagedThreadId}: {counter++}");
-                 Thread.Sleep(iDelay);
+                Console.Out.WriteLineAsync($"Thread #{Thread.CurrentThread.ManagedThreadId}: {counter++}");
+
+                Thread.Sleep(iDelay);
             }
         }
-        catch (Exception)
+        catch (ThreadInterruptedException)
         {
-
+            // Ignore
         }
     }
 
