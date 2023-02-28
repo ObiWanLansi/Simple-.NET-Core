@@ -1,3 +1,15 @@
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+class Program
+{
+
+    private static void MakeTrouble()
+    {
+        Thread.Sleep(2000);
+    }
+
+
+    static void Main(string[] args)
+    {
+        Console.Out.WriteLine("Hello, World!");
+    }
+}
